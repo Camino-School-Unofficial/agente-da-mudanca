@@ -210,61 +210,68 @@
             </div>
         </section>
         <!-- Showcase 7 -->
-        <section id="agente" class="bg-action-1 color-white text-center showcase_7">
-
-            <div class="meny">
+        <section id="agente" class="bg-action-1 color-white text-center">
+            <div class="meny-esq">
                 <h3 class="text-center pt-30 pb-50">A união faz a força!</h3>
                 <p class="mx-35">A formação em Agente para a mudança na educação foi um sonho e uma realização da equipe da Camino School com a Jornada X. Espero que você se divirta navegando por ela tanto quanto nos divertimos fazendo :)</p>
-                <img src="i/logo-color-gray.png" alt="" class="mt-30 mb-20 w-300 img-fluid">
-                <img src="i/Logo%20Jornada%20X%20-%20preto.png" alt="" class="mb-10 w-300 img-fluid">
+                <a href="https://caminoschool.com.br/"><img src="i/logo-color-gray.png" alt="" class="mt-30 mb-20 w-300 img-fluid"></a>
+                <a href="https://www.jornadax.org/"><img src="i/Logo%20Jornada%20X%20-%20preto.png" alt="" class="mb-10 w-300 img-fluid"></a>
             </div>
-            <div class="meny-left meny-arrow">
-                <img src="i/slick-arrow-left.svg">
+            <div class="meny-dir">
+                <p class="pt-150 pb-50 mx-35 f-20">Para ajudar na sua primeira vez por aqui vale a pena seguir esse tutorial de navegação</p>
+                <a href="#" class="btn mt-30 mt-sm-0 size50 border-transparent-white px-3" data-toggle="modal" data-target="#tutorial">
+                    Abrir tutorial
+                </a>
             </div>
-            <!--
-<div class="meny-right">
-<img src="i/slick-arrow-right.svg">
-</div>
+
+            <!-- Modal -->
+<!--
+            <div class="modal fade" id="tutorial" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="color-main" id="exampleModalLabel">Aqui um título</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            testes aqui
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
 -->
+
 
             <div class="contents">
                 <h2 class="pt-100 pb-80 text-center">Agente da Mudança na <br>Educação e na Aprendizagem</h2>
-                <p class="col-10 mx-80 pb-30 f-18">É com muito prazer que oferecemos este material de apoio e formação em aprendizagem ativa! Você professor, diretor, gestor, família e interessados no geral em metodologias ativas está convidado a trilhar esse caminho com a gente.</p>
-                <p class="col-10 mx-80 pb-30 f-18">Se é sua primeira vez aqui, observe as orientações a direita. <br>Depois siga para o curso. Esse é apenas o comecinho da nossa jornada. Te encontro do outro lado!</p>
-                <div class="meny-bottom pb-80">
-                    <a href="agente-mudanca.html" target="_blank" class="link">
+                <div class="row">
+                    <div class="col-2 text-left">
+                        <img src="i/slick-arrow-left.svg">
+                    </div>
+                    <div class="col-8 pb-30 f-18">
+                        É com muito prazer que oferecemos este material de apoio e formação em aprendizagem ativa! <br>
+                        <strong>Você professor, diretor, gestor, família e interessados no geral em metodologias ativas está convidado a trilhar esse caminho com a gente.</strong>
+                        <br><br>
+                        Se é sua primeira vez aqui, observe as orientações a direita. <br>Depois siga para o curso. Esse é apenas o comecinho da nossa jornada. Te encontro do outro lado!
+                    </div>
+                    <div class="col-2 text-right">
+                        <img src="i/slick-arrow-right.svg">    
+                    </div>
+                </div>
+                <div class="pb-80">
+                    <a href="agente-mudanca.html" target="_blank" class="link pt-50">
                         <p class="bold f-18 color-main">Vamos começar?</p>
                         <img src="i/fa-angle-down-white.png">
                     </a>
                 </div>
             </div>
-
-            <!--
-<div class="container px-xl-0">
-<div class="row justify-content-left align-items-center align-items-lg-end">
-<div class="col-lg-7 col-md-8 col-sm-7 text-sm-left" data-aos="fade-down" data-aos-delay="0">
-<h2 class="small">
-Trilhas
-</h2>
-</div>
-</div>
-<div class="row justify-content-center">
-<div class="mt-55 pb-20 col-lg-10 col-sm-12" data-aos="fade-down" data-aos-delay="0">
-<a href="agente-mudanca.html" class="link color-white">
-<img src="i/showcase_5_img_2.jpg" alt="" class="mb-30 img-fluid radius10">
-<div class="f-14 semibold text-uppercase sp-20">
-Experiência Formativa
-</div>
-<div class="mt-1 f-22 title">
-Agente da mudança
-</div>
-</a>
-</div>
-<div class="mt-55 pb-20 col-lg-5 col-sm-6" data-aos="fade-down" data-aos-delay="0">
-</div>
-</div>
-</div>
--->
         </section>
         <!-- Footer 7 -->
         <footer class="pt-55 pb-55 bg-light lh-40 text-center footer_7">
@@ -314,7 +321,7 @@ Agente da mudança
             // Create an instance of Meny
             var meny = Meny.create({
                 // The element that will be animated in from off screen
-                menuElement: document.querySelector( '.meny' ),
+                menuElement: document.querySelector( '.meny-esq'),
 
                 // The contents that gets pushed aside while Meny is active
                 contentsElement: document.querySelector( '.contents' ),
@@ -326,7 +333,7 @@ Agente da mudança
                 //				height: 200,
 
                 // [optional] The width of the menu (when using left/right position)
-                width: 400,
+                width: 300,
 
                 // [optional] Distance from mouse (in pixels) when menu should open
                 threshold: 40,
@@ -337,22 +344,34 @@ Agente da mudança
                 // [optional] Use touch swipe events to open/close
                 touch: true
             });
+        </script>
+        <script>
+            // Create an instance of Meny
+            var meny = Meny.create({
+                // The element that will be animated in from off screen
+                menuElement: document.querySelector( '.meny-dir'),
 
-            // API Methods:
-            // meny.open();
-            // meny.close();
-            // meny.isOpen();
+                // The contents that gets pushed aside while Meny is active
+                contentsElement: document.querySelector( '.contents' ),
 
-            // Events:
-            // meny.addEventListener( 'open', function(){ console.log( 'open' ); } );
-            // meny.addEventListener( 'close', function(){ console.log( 'close' ); } );
+                // [optional] The alignment of the menu (top/right/bottom/left)
+                position: Meny.getQuery().p || 'right',
 
-            // Embed an iframe if a URL is passed in
-            if( Meny.getQuery().u && Meny.getQuery().u.match( /^http/gi ) ) {
-                var contents = document.querySelector( '.contents' );
-                contents.style.padding = '0px';
-                contents.innerHTML = '<div class="cover"></div><iframe src="'+ Meny.getQuery().u +'" style="width: 100%; height: 100%; border: 0; position: absolute;"></iframe>';
-            }
+                // [optional] The height of the menu (when using top/bottom position)
+                //				height: 200,
+
+                // [optional] The width of the menu (when using left/right position)
+                width: 300,
+
+                // [optional] Distance from mouse (in pixels) when menu should open
+                threshold: 40,
+
+                // [optional] Use mouse movement to automatically open/close
+                mouse: true,
+
+                // [optional] Use touch swipe events to open/close
+                touch: true
+            });
         </script>
     </body>
 </html>

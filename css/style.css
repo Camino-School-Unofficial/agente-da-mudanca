@@ -4953,7 +4953,7 @@ b, strong {
   height: calc(100% - 160px);
 }
 
-.meny {
+.meny-esq {
 	display: none;
 	padding: 20px;
 	overflow: auto;
@@ -4965,9 +4965,22 @@ b, strong {
 	        box-sizing: border-box;
 }
 
+.meny-dir {
+	display: none;
+	padding: 20px;
+	overflow: auto;
+	background: #4da57f;
+	color: #fff;
+
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
 /**
  * Hint graphic that appears while menu is inactive
  */
+/*
 .meny-arrow {
 
 	position: absolute;
@@ -4991,18 +5004,7 @@ b, strong {
 		top: 50%;
 		margin-top: -16px;
 	}
-	.meny-top .meny-arrow {
-		left: 50%;
-		top: 14px;
-		margin-left: -16px;
-		border-top: 16px solid #e6e6e6;
-	}
-	.meny-bottom .meny-arrow {
-		left: 50%;
-		bottom: 14px;
-		margin-left: -16px;
-		border-bottom: 16px solid #e6e6e6;
-	}
+
 	.meny-active .meny-arrow {
 		opacity: 0;
 
@@ -5011,4 +5013,40 @@ b, strong {
 		    -ms-transition: opacity 0.2s ease;
 		     -o-transition: opacity 0.2s ease;
 		        transition: opacity 0.2s ease;
+	}
+}
+*/
+
+.contents {
+	padding: 20px 40px;
+	width: 100%;
+	height: 100%;
+	overflow-y: auto;
+
+	-webkit-overflow-scrolling: touch;
+	-webkit-transform-style: preserve-3d;
+
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+	.contents p {
+		margin: 10px 0 10px 0;
+		font-size: 16px;
+		line-height: 1.32;
+	}
+	.contents small {
+		display: block;
+		margin-top: 10px;
+		padding-top: 10px;
+		color: #333;
+		font-size: 0.85em;
+		border-top: 1px dashed #ccc;
+
+		-webkit-text-size-adjust: none;
+	}
+	.contents .sharing {
+		position: absolute;
+		bottom: 20px;
 	}
