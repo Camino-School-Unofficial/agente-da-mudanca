@@ -210,7 +210,24 @@
             </div>
         </section>
         <!-- Showcase 7 -->
-        <section id="agente" class="pt-100 pb-90 bg-action-1 color-white text-center showcase_7">
+        <section id="agente" class="bg-action-1 color-white text-center showcase_7">
+            
+            <div class="meny">
+			<h4 class="text-center pt-30 pb-30">A união faz a força!</h4>
+                <p class="mx-35">A formação em Agente para a mudança na educação foi um sonho e uma realização da equipe da Camino School com a Jornada X. Espero que você se divirta navegando por ela tanto quanto nos divertimos fazendo :)</p>
+			<img src="i/logo-color-gray.png" alt="" class="mb-30 img-fluid">
+                <img src="i/Logo%20Jornada%20X%20-%20preto.png" alt="" class="mb-30 img-fluid">
+		</div>
+            <div class="meny-arrow"></div>
+            
+		<div class="contents">
+         <h2 class="pt-100 pb-80">Agente da Mudança na <br>Educação e na Aprendizagem</h2>
+            <p class="mx-50 pb-80">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                
+				
+				
+		</div>
+<!--
             <div class="container px-xl-0">
                 <div class="row justify-content-left align-items-center align-items-lg-end">
                     <div class="col-lg-7 col-md-8 col-sm-7 text-sm-left" data-aos="fade-down" data-aos-delay="0">
@@ -218,13 +235,6 @@
                             Trilhas
                         </h2>
                     </div>
-                    <!--
-<div class="col-lg-3 col-md-4 col-sm-5 text-sm-right" data-aos="fade-down" data-aos-delay="250">
-<a href="#" class="btn mt-30 mt-sm-0 size50 border-transparent-white px-3">
-Ver todos os projetos
-</a>
-</div>
--->
                 </div>
                 <div class="row justify-content-center">
                     <div class="mt-55 pb-20 col-lg-10 col-sm-12" data-aos="fade-down" data-aos-delay="0">
@@ -242,6 +252,7 @@ Ver todos os projetos
                     </div>
                 </div>
             </div>
+-->
         </section>
         <!-- Footer 7 -->
         <footer class="pt-55 pb-55 bg-light lh-40 text-center footer_7">
@@ -283,9 +294,53 @@ Ver todos os projetos
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
         <!-- AOS 2.3.4 jQuery plugin JS (Animations) -->
         <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-        <!-- Maskedinput jQuery plugin JS (Masks for input fields) -->
-        <script src="js/jquery.maskedinput.min.js"></script>
         <!-- Startup JS (Custom js for all blocks) -->
         <script src="js/script.js"></script>
+        
+        <script src="js/meny.js"></script>
+		<script>
+			// Create an instance of Meny
+			var meny = Meny.create({
+				// The element that will be animated in from off screen
+				menuElement: document.querySelector( '.meny' ),
+
+				// The contents that gets pushed aside while Meny is active
+				contentsElement: document.querySelector( '.contents' ),
+
+				// [optional] The alignment of the menu (top/right/bottom/left)
+				position: Meny.getQuery().p || 'left',
+
+				// [optional] The height of the menu (when using top/bottom position)
+//				height: 200,
+
+				// [optional] The width of the menu (when using left/right position)
+				width: 400,
+
+				// [optional] Distance from mouse (in pixels) when menu should open
+				threshold: 40,
+
+				// [optional] Use mouse movement to automatically open/close
+				mouse: true,
+
+				// [optional] Use touch swipe events to open/close
+				touch: true
+			});
+
+			// API Methods:
+			// meny.open();
+			// meny.close();
+			// meny.isOpen();
+
+			// Events:
+			// meny.addEventListener( 'open', function(){ console.log( 'open' ); } );
+			// meny.addEventListener( 'close', function(){ console.log( 'close' ); } );
+
+			// Embed an iframe if a URL is passed in
+			if( Meny.getQuery().u && Meny.getQuery().u.match( /^http/gi ) ) {
+				var contents = document.querySelector( '.contents' );
+				contents.style.padding = '0px';
+				contents.innerHTML = '<div class="cover"></div><iframe src="'+ Meny.getQuery().u +'" style="width: 100%; height: 100%; border: 0; position: absolute;"></iframe>';
+			}
+		</script>
     </body>
 </html>
