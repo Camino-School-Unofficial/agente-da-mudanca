@@ -33,7 +33,7 @@
         <div class="reveal">
             <div class="slides">
                 <section>
-                    <section class="pt-10 pb-100 text-center ecommerce_40" data-background="#ec6f05">
+                    <section class="pt-10 pb-100 text-center ecommerce_40" data-background="#ec6f05" data-transition="slide">
                         <div class="container px-xl-0">
                             <div class="row justify-content-center">
                                 <div class="col-12">
@@ -47,6 +47,19 @@
                             </div>
                         </div>
                     </section>
+                    
+                    <section id="transitions">
+					<h2>Transition Styles</h2>
+					<p>
+						You can select from different transitions, like: <br>
+						<a href="?transition=none#/transitions">None</a> -
+						<a href="?transition=fade#/transitions">Fade</a> -
+						<a href="?transition=slide#/transitions">Slide</a> -
+						<a href="?transition=convex#/transitions">Convex</a> -
+						<a href="?transition=concave#/transitions">Concave</a> -
+						<a href="?transition=zoom#/transitions">Zoom</a>
+					</p>
+				</section>
 
                     <section class="h-full">
                         <h2 class="bg-dark color-white pt-20 pb-20 radius10">Cartas na mesa</h2>
@@ -69,18 +82,18 @@
                     </section>
 
                     <section>
-                        <h2 class="color-main pb-80">Pontos de vista</h2>
+                        <h2 class="color-main pb-60">Pontos de vista</h2>
                         <div class="f-32 pb-15">
                             Pressiosse <strong>ESC</strong> para visualizar todas as fichas.
                         </div>
 
                         <div class="row">
-                            <div class="col-3">
+                            <div class="col-2">
                             </div>
-                            <div class="pt-35 col-3 f-20 light">
-                                Você pode navegar entre as fichas usando as setas do seu teclado.
+                            <div class="col-5 pt-20 f-20 light">
+                                Você pode navegar entre as fichas usando as setas do seu teclado. <br> Pressione ESC novamente ou clique para voltar a visão completa da ficha.
                             </div>
-                            <div class="col-3">
+                            <div class="col-3 pt-15">
                                 <img src="i/teclas.svg" class="w-150">
                             </div>
                         </div>
@@ -103,7 +116,7 @@
                         </div>
                     </section>
 
-                    <section class="h-full">
+                    <section class="h-full" data-background-transition="convex">
                         <h2 class="color-main pt-60 pb-60 fragment fade-right">Barra de progressão</h2>
                         <div class="row pt-60 pb-60">
                             <div class="col-4">
@@ -130,13 +143,6 @@
                     <section class="bg-light content_25 w-full h-full">
 
                     </section>
-                </section>
-
-                <section data-visibility="hidden">
-                    <h2>Hidden Slides</h2>
-                    <p>
-                        This slide is visible in the source, but hidden when the presentation is viewed. You can show all hidden slides by setting the `showHiddenSlides` config option to `true`.
-                    </p>
                 </section>
 
                 <section data-background="#ec6f05">
