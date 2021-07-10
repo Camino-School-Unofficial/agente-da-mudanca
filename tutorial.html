@@ -144,7 +144,7 @@
                     <div class="row">
                         <div class="col-9 ml-50 color-main text-right f-24">
                             Você quer seu material offline para imprimir ou tomar notas? Você pode <a href="?print-pdf" class="color-white bold link">exportar para PDF</a> <br>
-                            Depois de clicar no link é só pedir para seu navegador imprimir e salvar o .pdf gerado :)
+                            Depois de clicar no link é só selecionar tudo e pedir para seu navegador imprimir. Assin, você pode salvar o .pdf gerado :)
                         </div>
                         <div class="col-2 text-left">
                             <img src="i/pdf.svg" class="w-100">
@@ -172,7 +172,7 @@
         <script src="plugin/search/search.js"></script>
         <script src="plugin/markdown/markdown.js"></script>
         <script src="plugin/highlight/highlight.js"></script>
-        <script src="js/fokus.min.js"></script>
+<!--        <script src="js/fokus.min.js"></script>-->
         <script>
 
             // Also available as an ES module, see:
@@ -187,6 +187,7 @@
                 plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
             });
 
+            Reveal.configure({ pdfSeparateFragments: false });
         </script>
     </body>
 </html>
