@@ -311,8 +311,8 @@
   border-color: #333333;
 }
 .btn.border-transparent-main {
-  color: #000000;
-  border: 2px solid rgba(0, 0, 0, 0.3);
+  color: #851f82;
+  border: 2px solid rgba(133, 31, 130, 0.3);
 }
 .btn.border-transparent-main:hover {
   border-color: rgba(0, 0, 0, 0.7);
