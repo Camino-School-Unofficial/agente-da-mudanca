@@ -1,6 +1,6 @@
 html, body {
   overflow: hidden;
-  background: #4da57f;
+  background: #16A549;
 }
 
 .spinner {
@@ -21,7 +21,7 @@ i b {
   width: 6px;
   height: 6px;
   border-radius: 6px;
-  background: white;
+  background: black;
   box-shadow: 0px 0px 14px white;
   animation-name: spin;
   animation-duration: 3s;
